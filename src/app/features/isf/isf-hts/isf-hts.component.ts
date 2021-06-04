@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './isf-hts.component.html',
   styleUrls: ['./isf-hts.component.scss']
 })
+
 export class IsfHtsComponent implements OnInit {
   constructor() { }
 

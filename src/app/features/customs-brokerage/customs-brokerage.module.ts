@@ -1,21 +1,25 @@
-import { NgModule } from '@angular/core';
+import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
+
 import { CommonModule } from '@angular/common';
-
-import { CustomsBrokerageRoutingModule } from './customs-brokerage-routing.module';
 import { CustomsBrokerageComponent } from './customs-brokerage.component';
+import { CustomsBrokerageRoutingModule } from './customs-brokerage-routing.module';
+import { DatesComponent } from './dates/dates.component';
 import { ImporterComponent } from './importer/importer.component';
-import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
-import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-
 
 @NgModule({
   declarations: [
     CustomsBrokerageComponent,
-    ImporterComponent
+    ImporterComponent,
+    DatesComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +29,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatRadioModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatRippleModule
   ]
 })
 export class CustomsBrokerageModule { }
