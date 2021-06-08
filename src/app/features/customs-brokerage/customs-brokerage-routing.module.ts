@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 const routes: Routes = [
   { path: '', component: CustomsBrokerageComponent,
     children: [
+      { path:'', component: DatesComponent},
       { path: 'importer', component: ImporterComponent},
       { path: 'dates', component: DatesComponent}
     ] },

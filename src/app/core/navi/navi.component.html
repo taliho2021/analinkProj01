@@ -14,7 +14,7 @@
       </div>
 
       <mat-divider></mat-divider>
-      
+
       <a *ngFor="let item of menuItems" mat-list-item [routerLink]="'/'+item">{{item | titlecase}}</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -33,7 +33,7 @@
       </button>
 
       <span>ANA LINK, LTD</span>
-      
+
       <!-- Right side of top portion of navbar -->
       <span class="example-spacer"></span>
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [mat-menu-trigger-for] ="menu1">
@@ -42,15 +42,16 @@
           <button mat-menu-item>Quick Entry</button>
           <button mat-menu-item>Customers</button>
           <button mat-menu-item>Vendors</button>
+          <button mat-menu-item routerLink="signin" routerLinkActive="active">Log In</button>
         </mat-menu>
       </button>
-      
+
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"  [mat-menu-trigger-for]="menu2">
        <mat-icon>share</mat-icon>
        <mat-menu #menu2 = "matMenu">
         <button mat-menu-item>Settings</button>
         <button mat-menu-item>Ask Experts</button>
-        <button mat-menu-item>Log Out</button>
+        <button mat-menu-item routerLink="signout" routerLinkActive="active">Log Out</button>
       </mat-menu>
       </button>
 
@@ -82,7 +83,7 @@
        </button>
 
     </mat-toolbar>
-    
+
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
   </mat-sidenav-content>

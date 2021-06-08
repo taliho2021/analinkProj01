@@ -9,6 +9,7 @@ import { SharedComponent } from './shared.component';
 const routes: Routes = [
   {path: '', component: SharedComponent,
    children: [
+     {path: '', component: SharedComponent},
      {path:'dashboard01', component: Dashboard01Component},
      {path: 'dashboard02', component: Dashboard02Component},
      {path: 'card', component: CardComponent}
