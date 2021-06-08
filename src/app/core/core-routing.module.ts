@@ -2,11 +2,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AddressComponent } from './address/address.component';
 import { CoreComponent } from './core.component';
+import { IsfInputComponent } from './isf-input/isf-input.component';
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {path: '', component: CoreComponent },
-  {path: 'address', component: AddressComponent}];
+  {path: 'address', component: AddressComponent},
+  { path: 'isf', component: IsfInputComponent}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

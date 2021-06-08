@@ -21,6 +21,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NaviComponent } from './navi/navi.component';
 import { NgModule } from '@angular/core';
 import { LogOutComponent } from './log-out/log-out.component';
+import { IsfInputComponent } from './isf-input/isf-input.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LogOutComponent } from './log-out/log-out.component';
     NaviComponent,
     AddressComponent,
     LogInComponent,
-    LogOutComponent
+    LogOutComponent,
+    IsfInputComponent
   ],
   imports: [
     CommonModule,
