@@ -9,8 +9,22 @@ import {FormControl, FormGroup} from '@angular/forms';
 export class DatesComponent implements OnInit {
   campaignOne: FormGroup;
   campaignTwo: FormGroup;
+
+  bookTitle: string ="Becoming";
+  author: string = "Michell Obama";
   
+  sideBarOpen = false;
+  serverName ='Test Server';
+  username ='';
+  allowNewServer = false;
+  serverCreationStatus = 'No server was created';
+  serverCreated = false;
+
   constructor() { 
+    setTimeout(() =>{ 
+      this.sideBarOpen = true;
+    }, 2000);
+
     const today = new Date();
     const month = today.getMonth();
     const year = today.getFullYear();
@@ -29,4 +43,13 @@ export class DatesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onCreateServer() {
+    this.serverCreated = true;
+    this.serverCreationStatus = 'Server was created!  Name is ' + this.serverName;
+  }
+  
+  onUpdateServerName(event:Event) {
+    this.serverName = (<HTMLInputElement>event.target).value;
+    
+  }
 }

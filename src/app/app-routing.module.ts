@@ -11,7 +11,8 @@ const routes: Routes = [
                         { path: 'dashboard', loadChildren: () => import('./core/core.module').then(m => m.CoreModule) },
                         { path: 'shared', loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule) },
                         { path: 'drag-drop', loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule) },
-                        { path: 'core', loadChildren: () => import('./core/core.module').then(m => m.CoreModule)}];
+                        { path: 'core', loadChildren: () => import('./core/core.module').then(m => m.CoreModule)},
+                        { path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

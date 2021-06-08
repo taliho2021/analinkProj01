@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 
 import { CommonModule } from '@angular/common';
@@ -13,7 +14,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatRadioModule,
     MatCardModule,
+    FormsModule,
     ReactiveFormsModule,
     MatDatepickerModule,
     MatFormFieldModule,
