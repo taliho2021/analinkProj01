@@ -4,11 +4,13 @@ import { MainLandingComponent } from './main-landing/main-landing.component';
 import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { HtmlBlockComponent } from './html-block/html-block.component';
 
 @NgModule({
   declarations: [
     PagesComponent,
-    MainLandingComponent
+    MainLandingComponent,
+    HtmlBlockComponent
   ],
   imports: [
     CommonModule,
