@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class NaviComponent {
 
-  menuItems = ['dashboard', 'address', 'drag-drop', 'import-table', 'mat-tree','Entry Summary', 'Statements', 'Reports', 'Codes', 'Data Query'];
+  menuItems = ['signin', 'signout', 'core', 'shared', 'features','core', 'pages', 'Reports', 'Codes', 'Data Query'];
   
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -22,3 +22,5 @@ export class NaviComponent {
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }
+
+// singin  signout  core shared  features   core pages

@@ -6,8 +6,10 @@ import { CommonModule } from '@angular/common';
 import { CoreComponent } from './core.component';
 import { CoreRoutingModule } from './core-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { IsfInputComponent } from './isf-input/isf-input.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { LogInComponent } from './log-in/log-in.component';
+import { LogOutComponent } from './log-out/log-out.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,8 +22,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NaviComponent } from './navi/navi.component';
 import { NgModule } from '@angular/core';
-import { LogOutComponent } from './log-out/log-out.component';
-import { IsfInputComponent } from './isf-input/isf-input.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +51,8 @@ import { IsfInputComponent } from './isf-input/isf-input.component';
     ReactiveFormsModule
   ],
   exports :[
-    NaviComponent
+    NaviComponent,
+    AddressComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

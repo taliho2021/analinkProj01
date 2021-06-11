@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { CoreModule } from '@angular/flex-layout';
 import { FeaturesComponent } from './features.component';
 import { FeaturesRoutingModule } from './features-routing.module';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,8 @@ import { NgModule } from '@angular/core';
   ],
   imports: [
     CommonModule,
-    FeaturesRoutingModule
+    FeaturesRoutingModule,
+    CoreModule
   ]
 })
 export class FeaturesModule { }

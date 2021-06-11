@@ -8,7 +8,7 @@ import { NgModule } from '@angular/core';
 const routes: Routes = [
   {path: '', component: CoreComponent },
   {path: 'address', component: AddressComponent},
-  { path: 'isf', component: IsfInputComponent}];
+  { path: 'isf-input', component: IsfInputComponent}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
