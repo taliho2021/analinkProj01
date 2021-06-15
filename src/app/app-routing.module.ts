@@ -12,7 +12,8 @@ const routes: Routes = [
                         { path: 'shared', loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule) },
                         { path: 'features', loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule) },
                         { path: 'core', loadChildren: () => import('./core/core.module').then(m => m.CoreModule)},
-                        { path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) }];
+                        { path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+                        { path: 'forms', loadChildren: () => import('./forms/forms.module').then(m => m.FormsModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

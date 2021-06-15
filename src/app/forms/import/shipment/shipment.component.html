@@ -1,0 +1,70 @@
+<form [formGroup]="shipmentForm" (ngSubmit) ='onSubmit()'>
+  <label>
+    Shipper:
+    <input type="text" formControlName='shipper'>
+  </label>
+
+  <label>
+    Consignee:
+    <input type="text" formControlName='consignee'>
+  </label>
+
+  <label>
+    Delivery To:
+    <input type="text" formControlName='deliveryTo'>
+  </label>
+
+  <label>
+    Bill To:
+    <input type="text" formControlName='billTo'>
+  </label>
+
+  <div formGroupName='importerAddress'>
+    <h3>Importer Address</h3>
+    <label>
+      Importer Name:
+      <input type="text" formControlName='name'>
+    </label>
+
+    <label>
+      Street Address 1:
+      <input type="text" formControlName='street'>
+    </label>
+
+    <label>
+      Street Address 2:
+      <input type="text" formControlName='street2'>
+    </label>
+
+    <label>
+      City:
+      <input type="text" formControlName='city'>
+    </label>
+
+    <label>
+      State:
+      <input type="text" formControlName='state'>
+    </label>
+
+    <label>
+      Zip Code:
+      <input type="text" formControlName='zip'>
+    </label>
+
+    <label>
+      Telephone Number:
+      <input type="text" formControlName='telNo'>
+    </label>
+
+    <label>
+      Email:
+      <input type="text" formControlName='email'>
+    </label>
+
+  </div>
+
+  <button type='submit' [disabled]='!shipmentForm.valid'>Submit</button>
+
+</form>
+
+
