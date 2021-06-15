@@ -63,8 +63,59 @@
 
   </div>
 
+  <div formGroupName='deliveryAddress'>
+    <h3>Delivery Address</h3>
+    <label>
+      Deliver to:
+      <input type="date" formControlName='name'>
+    </label>
+
+    <label>
+      Street Address 1:
+      <input type="text" formControlName='street'>
+    </label>
+
+    <label>
+      Street Address 2:
+      <input type="text" formControlName='street2'>
+    </label>
+
+    <label>
+      City:
+      <input type="text" formControlName='city'>
+    </label>
+
+    <label>
+      State:
+      <select type="text" formControlName='state'>
+        <option value="AL">Alabama</option>
+        <option value="CA">California</option>
+        <option value="NY">New York</option>
+      </select>
+    </label>
+
+    <label>
+      Zip Code:
+      <input type="number" formControlName='zip'>
+    </label>
+
+    <label>
+      Telephone Number:
+      <input type="tel" formControlName='telNo'>
+    </label>
+
+    <label>
+      Email:
+      <input type="email" formControlName='email'>
+    </label>
+
+  </div>
+
   <button type='submit' [disabled]='!shipmentForm.valid'>Submit</button>
 
-</form>
+ </form>
 
+<p>Shipper is:  {{shipmentForm.value.shipper}}</p>
+<p>Consignee is : {{shipmentForm.value.consignee}}</p>
 
+<p>Importer's name is: {{shipmentForm.value.importerAddress.name}}</p>

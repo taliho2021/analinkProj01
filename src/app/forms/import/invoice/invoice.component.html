@@ -1,0 +1,181 @@
+<form [formGroup]=" invoiceForm" (ngSubmit) ='onSubmit()' class='example-form'>
+    <h2>Related Parties</h2>
+    <table class='example-full-width' cellspacing='0'>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Shipper:</mat-label>
+                    <input matInput type="text" formControlName='shipper'>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Consignee:</mat-label>
+                    <input matInput type="text" formControlName='consignee'>
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Delivery To:</mat-label>
+                    <input matInput type="text" formControlName='deliveryTo'>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Consignee:</mat-label>
+                    <input matInput type="text" formControlName='consignee'>
+                </mat-form-field>    
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Bill To:</mat-label>
+                    <input matInput type="text" formControlName='billTo'>
+                </mat-form-field>   
+            </td>
+        </tr>
+        <tr></tr>
+
+    </table>
+     
+       
+    <div formGroupName='importerAddress'>
+      <h2>Importer Address</h2>
+      <table class='example-full-width' cellspacing='0'>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Importer Name:</mat-label>
+                    <input matInput type="text" formControlName='name'>
+                </mat-form-field>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Street Address 1:</mat-label>
+                    <input matInput type="text" formControlName='street'>
+                </mat-form-field>
+            </td>
+
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Street Address 2:</mat-label>
+                    <input matInput type="text" formControlName='street2'>
+                </mat-form-field>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>City:</mat-label>
+                    <input matInput type="text" formControlName='city'>
+                </mat-form-field>    
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>State:</mat-label>
+                    <input matInput type="text" formControlName='state'>
+                </mat-form-field>   
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Zip Code:</mat-label>
+                    <input matInput type="text" formControlName='zip'>
+                </mat-form-field>   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Telephone #:</mat-label>
+                    <input matInput type="text" formControlName='telNo'>
+                </mat-form-field>   
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>E-mail:</mat-label>
+                    <input matInput type="text" formControlName='email'>
+                </mat-form-field>   
+            </td>
+        </tr>
+    </table>     
+             
+    </div>
+  
+    <div formGroupName='deliveryAddress'>
+      <h2>Delivery Address</h2>
+      <table class='example-full-width' cellspacing='0'>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Delivery To:</mat-label>
+                    <input matInput type="text" formControlName='name'>
+                </mat-form-field>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Street Address 1:</mat-label>
+                    <input matInput type="text" formControlName='street'>
+                </mat-form-field>
+            </td>
+
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Street Address 2:</mat-label>
+                    <input matInput type="text" formControlName='street2'>
+                </mat-form-field>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>City:</mat-label>
+                    <input matInput type="text" formControlName='city'>
+                </mat-form-field>    
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>State:</mat-label>
+                    <input matInput type="text" formControlName='state'>
+                </mat-form-field>   
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Zip Code:</mat-label>
+                    <input matInput type="text" formControlName='zip'>
+                </mat-form-field>   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>Telephone #:</mat-label>
+                    <input matInput type="text" formControlName='telNo'>
+                </mat-form-field>   
+            </td>
+            <td>
+                <mat-form-field class='example-full-width' appearance='fill'>
+                    <mat-label>E-mail:</mat-label>
+                    <input matInput type="text" formControlName='email'>
+                </mat-form-field>   
+            </td>
+        </tr>
+    </table>     
+</div>
+  
+    <button type='submit' [disabled]='!invoiceForm.valid'>Submit</button>
+  
+   </form>
+  
+  <p>Shipper is:  {{invoiceForm.value.shipper}}</p>
+  <p>Consignee is : {{invoiceForm.value.consignee}}</p>
+  
+  <p>Importer's name is: {{invoiceForm.value.importerAddress.name}}</p>

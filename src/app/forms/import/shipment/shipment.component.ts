@@ -27,7 +27,18 @@ export class ShipmentComponent implements OnInit {
       zip: [''],
       telNo: [''],
       email: [''],
-    })
+    }),
+    deliveryAddress: this.fb.group({
+      name: [''],
+      street: [''],
+      street2: [''],
+      city: [''],
+      state: [''],
+      zip: [''],
+      telNo: [''],
+      email: [''],
+    }),
+  
   })
 
   ngOnInit(): void {

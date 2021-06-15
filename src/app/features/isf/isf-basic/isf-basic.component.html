@@ -14,16 +14,22 @@
       <p class="col">
         <mat-form-field appearance="outline">
           <mat-label>ISF Type</mat-label>
-          <input matInput placeholder="Placeholder">
+          <mat-select>
+            <mat-option value="one">ISF-10</mat-option>
+            <mat-option value="two">ISF-5</mat-option>
+          </mat-select>
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <mat-hint>Hint</mat-hint>
+          <mat-hint>ISF Filing Type</mat-hint>
         </mat-form-field>
       </p>
 
       <p class="col">
         <mat-form-field appearance="outline">
           <mat-label>MOT</mat-label>
-          <input matInput placeholder="Placeholder">
+          <mat-select>
+            <mat-option value="11"> 11-Containerized</mat-option>
+            <mat-option value="10"> 10-Break Bulk</mat-option>
+          </mat-select>
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           <mat-hint>Mode of Transportation</mat-hint>
         </mat-form-field>
@@ -37,16 +43,33 @@
       <p class="col">
         <mat-form-field appearance="outline">
           <mat-label>Shipment Type</mat-label>
-          <input matInput placeholder="Placeholder">
+          <mat-select>
+            <mat-option value="01"> 01=Standard of Regular Filings</mat-option>
+            <mat-option value="02"> 02=To Order Shipment</mat-option>
+            <mat-option value="03"> 03=Household Goods / Personal Effects</mat-option>
+            <mat-option value="04"> 04=Military, Government</mat-option>
+            <mat-option value="05"> 05=Diplomatic ShipmentStandard of Regular Filings</mat-option>
+            <mat-option value="06"> 06=Carnet</mat-option>
+            <mat-option value="07"> 07=US Goods Returned</mat-option>
+            <mat-option value="08"> 08=FTZ Shipment</mat-option>
+            <mat-option value="09"> 09=International Mail Shipment</mat-option>
+            <mat-option value="10"> 10=Outer Continental Shipments</mat-option>
+            <mat-option value="11"> 11=Informal</mat-option>
+          </mat-select>
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <mat-hint>Hint</mat-hint>
+          <mat-hint>Type of shipment</mat-hint>
         </mat-form-field>
       </p>
 
       <p class="col">
         <mat-form-field appearance="outline">
           <mat-label>Action Reason</mat-label>
-          <input matInput placeholder="Placeholder">
+          <mat-select>
+            <mat-option value="CT"> CT=Complete Transaction</mat-option>
+            <mat-option value="FR"> FR=Flexible Range</mat-option>
+            <mat-option value="FT"> FT=Flexible Timing</mat-option>
+            <mat-option value="FX"> FX=Flexible Range and Timing</mat-option>
+          </mat-select>
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           <mat-hint>Hint</mat-hint>
         </mat-form-field>
