@@ -66,7 +66,9 @@ import { PostsComponent } from './posts/posts.component';
   ],
   exports :[
     NaviComponent,
-    AddressComponent
+    AddressComponent,
+    PostsComponent,
+    ClientsComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

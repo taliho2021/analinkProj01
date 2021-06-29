@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class NaviComponent {
 
-  menuItems = ['signin', 'signout', 'core', 'shared', 'features','core', 'pages', 'Reports', 'Codes', 'Data Query'];
+  menuItems = ['dashboard', 'isf', 'ams', 'cb', 'clients','vendors', 'tables', 'reports', 'accounting', 'apps'];
   
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(

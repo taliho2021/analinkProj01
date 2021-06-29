@@ -2,6 +2,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule } from '@angular/common';
+import { CoreModule } from '../core/core.module';
 import { EntrySummaryComponent } from './entry-summary/entry-summary.component';
 import { HtmlBlockComponent } from './html-block/html-block.component';
 import { MainLandingComponent } from './main-landing/main-landing.component';
@@ -27,6 +28,7 @@ import { PagesRoutingModule } from './pages-routing.module';
     MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
+    CoreModule,
     CarouselModule.forRoot()
   ]
 })

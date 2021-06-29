@@ -1,6 +1,33 @@
 <h1>Home Landing Page</h1>
 
-
+<div>
+    <input type="checkbox" id="posts" [checked]="showPosts" (click)="togglePosts()">
+    <label for="posts">Posts</label>
+  
+    <input type="checkbox" id="clients" [checked]="showClients" (click)="toggleClients()">
+    <label for="clients">Clients</label>
+  
+    <input type="checkbox" id="downloader" [checked]="showDownloader" (click)="toggleDownloader()">
+    <label for="downloader">Downloader</label>
+  
+    <input type="checkbox" id="uploader" [checked]="showUploader" (click)="toggleUploader()">
+    <label for="uploader">Uploader</label>
+  
+    <input type="checkbox" id="search" [checked]="showSearch" (click)="toggleSearch()">
+    <label for="search">Search</label>
+  </div>
+  
+  <app-posts *ngIf="showPosts"></app-posts>
+  <hr />
+  <!-- <app-messages></app-messages> -->
+  <hr />
+  <app-clients *ngIf="showClients"></app-clients>
+  <hr />
+  <!-- <app-downloader *ngIf="showDownloader"></app-downloader>
+  <hr />
+  <app-uploader *ngIf="showUploader"></app-uploader>
+  <hr />
+  <app-package-search *ngIf="showSearch"></app-package-search> -->
 
  <router-outlet></router-outlet>
  
